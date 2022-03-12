@@ -36,7 +36,7 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Attack");
 
         //Detect enemies in range
-        Collider2d[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         //Damage them
         foreach(Collider2D enemy in hitEnemies)
@@ -52,6 +52,6 @@ public class PlayerCombat : MonoBehaviour
         if (attackPoint == null)
             return;
 
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange)
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
