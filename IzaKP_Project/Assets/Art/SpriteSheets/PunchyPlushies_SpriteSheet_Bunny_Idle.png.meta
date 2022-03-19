@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 60626dd000240344fa448f546b674014
+guid: e5ff85913d32a2148a8de7e5d28a50b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1243552244729419524
-    second: PunchyPlushies_SpriteSheet_Bear_Idle_0
+      213: 3767884610614991690
+    second: PunchyPlushies_SpriteSheet_Bunny_Idle_0
   - first:
-      213: -7177932561320389428
-    second: PunchyPlushies_SpriteSheet_Bear_Idle_1
+      213: -4078373630640868040
+    second: PunchyPlushies_SpriteSheet_Bunny_Idle_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Bear_Idle_0
+      name: PunchyPlushies_SpriteSheet_Bunny_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,35 +141,35 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4079cbe8d2cf14110800000000000000
-      internalID: 1243552244729419524
+      spriteID: a4b1e5a17173a4430800000000000000
+      internalID: 3767884610614991690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Bear_Idle_1
+      name: PunchyPlushies_SpriteSheet_Bunny_Idle_1
       rect:
         serializedVersion: 2
-        x: 1341
+        x: 1024
         y: 0
         width: 1024
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc4d9c4ad5cd26c90800000000000000
-      internalID: -7177932561320389428
+      spriteID: 835b4548ac4b667c0800000000000000
+      internalID: -4078373630640868040
       vertices: []
       indices: 
       edges: []
