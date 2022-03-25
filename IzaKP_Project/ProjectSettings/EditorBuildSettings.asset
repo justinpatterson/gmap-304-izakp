@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseYourFighterMenu.unity
     guid: 85652e378317e42b9a5a460b81141400
+  - enabled: 1
+    path: Assets/Scenes/PlayScreen.unity
+    guid: bc9e14a1f728de64798a1bc669661fc7
   m_configObjects: {}
