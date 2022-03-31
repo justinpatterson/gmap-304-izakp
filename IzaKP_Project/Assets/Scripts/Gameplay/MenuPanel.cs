@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class MenuPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   bool _isOpen = false;
+
+    private void Awake()
     {
-        
+        _isOpen = gameObject.activeSelf;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenPanel()
     {
-        
+        _isOpen = true;
+        gameObject.SetActive(_isOpen);
     }
+
+    public void ClosePanel()
+    {
+        _isOpen = false;
+        gameObject.SetActive(_isOpen);
+    }
+
 }
