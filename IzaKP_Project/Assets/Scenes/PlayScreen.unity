@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &239049658 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3655972689545472213, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+  m_PrefabInstance: {fileID: 740449457371033769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &773496238
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +461,6 @@ GameObject:
   - component: {fileID: 1673251091}
   - component: {fileID: 1673251094}
   - component: {fileID: 1673251090}
-  - component: {fileID: 1673251092}
   - component: {fileID: 1673251093}
   m_Layer: 0
   m_Name: Player
@@ -510,26 +520,6 @@ MonoBehaviour:
   attackRange: 0.5
   attackDamage: 20
   attackRate: 2
---- !u!114 &1673251092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673251088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39a3e26195272af4696143452c7ed143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  attackPoint: {fileID: 0}
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  attackRange: 0.5
-  attackDamage: 20
-  attackRate: 2
 --- !u!50 &1673251093
 Rigidbody2D:
   serializedVersion: 4
@@ -563,8 +553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc62ac1ab023f74cbb3307239d5a7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  runSpeed: 40
+  joystick: {fileID: 239049658}
+  runSpeed: 20
+  horizontalMove: 0
 --- !u!1 &1760504447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1033,14 @@ PrefabInstance:
     - target: {fileID: 885358434554532374, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655972689545472213, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: axisOptions
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655972689545472217, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5764823486981205710, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y

@@ -8,7 +8,7 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public float Horizontal { get { return (snapX) ? SnapFloat(input.x, AxisOptions.Horizontal) : input.x; } }
     public float Vertical { get { return (snapY) ? SnapFloat(input.y, AxisOptions.Vertical) : input.y; } }
     public Vector2 Direction { get { return new Vector2(Horizontal, Vertical); } }
-
+        
     public float HandleRange
     {
         get { return handleRange; }
@@ -37,8 +37,10 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 
     private Canvas canvas;
     private Camera cam;
-
+    [SerializeField]
     private Vector2 input = Vector2.zero;
+
+    public virtual Vector2 GetInput() { return input; }
 
     protected virtual void Start()
     {
