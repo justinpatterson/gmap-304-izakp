@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private float moveSpeed;
+    public Joystick joystick;
+
+    public float runSpeed = 40f;
+
+    float horizontalMove = 0f;
 
    private void Start()
     {
@@ -38,5 +43,9 @@ public class PlayerMovement : MonoBehaviour
                     break;
             }
         }
+
+        //Brackey's tutorial on joystick movement
+        horizontalMove = joystick.Horizontal * runSpeed;
+
     }
 }

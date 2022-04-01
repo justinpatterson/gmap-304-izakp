@@ -563,6 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc62ac1ab023f74cbb3307239d5a7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  runSpeed: 40
 --- !u!1 &1760504447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,10 +1067,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6417048144767236130, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6719102596863290735, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1153,17 +1151,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7142272996690421094, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8002110362730319269, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_Name
       value: PlayScreenCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8927964428134503667, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
