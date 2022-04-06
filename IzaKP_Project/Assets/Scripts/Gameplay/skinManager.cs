@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class skinManager : MonoBehaviour
 {
     //list that holds all of the skins
-    public SpriteRenderer sr;
+    //public SpriteRenderer sr;
+    public Image skinImage;
     public List<Sprite> skins = new List<Sprite>();
 
     //To keep track of what the skin is currently selected
@@ -15,6 +17,13 @@ public class skinManager : MonoBehaviour
 
     //Skin for the actual player
     public GameObject playerskin;
+
+    private void Awake()
+    {
+        selectedSkin = PlayerPrefs.GetInt("SelectedSkin", 0);
+
+        skinImage.sprite = skins[selectedSkin];
+    }
 
     //run when we click the next button
     public void NextOption()
@@ -25,7 +34,7 @@ public class skinManager : MonoBehaviour
         {
             selectedSkin = 0;
         }
-        sr.sprite = skins[selectedSkin];
+        skinImage.sprite = skins[selectedSkin];
     }
 
     //run when we click the back button
@@ -37,13 +46,14 @@ public class skinManager : MonoBehaviour
         {
             selectedSkin = skins.Count - 1;
         }
-        sr.sprite = skins[selectedSkin];
+        skinImage.sprite = skins[selectedSkin];
     }
 
     //run the play button
     public void PlayGame()
     {
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Prefabs/selectedSkin.prefab");
+        //PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Prefabs/selectedSkin.prefab");
+        PlayerPrefs.SetInt("SelectedSkin", selectedSkin);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
