@@ -516,8 +516,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 2117687204573728505}
   skins:
-  - {fileID: 21300000, guid: 46a474a1ebfd6d544bc4830bd8b99292, type: 3}
   - {fileID: 21300000, guid: 45ab9a8e38085c04d83682b02c0a03e3, type: 3}
+  - {fileID: 21300000, guid: 46a474a1ebfd6d544bc4830bd8b99292, type: 3}
+  - {fileID: 21300000, guid: 52008d275a1952845837f4adcb06a0e0, type: 3}
   playerskin: {fileID: 702504866655227330}
 --- !u!1 &5945393751692305254
 GameObject:
