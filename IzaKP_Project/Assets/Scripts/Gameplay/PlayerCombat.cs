@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    public int maxHealth = 12;
+    public int currentHealth;
+
+    public HealthBar healthBar;
+
     public Animator animator;
+
+    //access health bar
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
+
 
     //reference Attack Point
     public Transform attackPoint;
@@ -27,6 +40,12 @@ public class PlayerCombat : MonoBehaviour
                 Attack();
                 nextattackTime = Time.time + 1f / attackRate;
             }
+        }
+
+        //Test to see if health bar reacts to damage
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
         }
     }
 
@@ -53,5 +72,12 @@ public class PlayerCombat : MonoBehaviour
             return;
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
     }
 }

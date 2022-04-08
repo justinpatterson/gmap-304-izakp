@@ -523,6 +523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a3e26195272af4696143452c7ed143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 12
+  currentHealth: 0
+  healthBar: {fileID: 0}
   animator: {fileID: 0}
   attackPoint: {fileID: 0}
   enemyLayers:
@@ -751,6 +754,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920317150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7824609065026035528, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+  m_PrefabInstance: {fileID: 740449457371033769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019ebe0e822434b4588fccadeabe347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &1930203262
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -926,6 +940,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1791346929143287586, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791346929143287586, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3655972689545472213, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: axisOptions
       value: 1
@@ -1055,6 +1077,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 940850975104101632, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1920317150}
     - target: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: m_Name
       value: Player
