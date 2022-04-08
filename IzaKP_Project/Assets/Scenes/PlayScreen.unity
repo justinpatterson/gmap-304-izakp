@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 239049658}
-  runSpeed: 20
+  runSpeed: 12
   horizontalMove: 0
 --- !u!1 &1791784609
 GameObject:

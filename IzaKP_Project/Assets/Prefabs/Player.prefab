@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  runSpeed: 40
+  runSpeed: 10
   horizontalMove: 0
 --- !u!114 &940850975104101632
 MonoBehaviour:
