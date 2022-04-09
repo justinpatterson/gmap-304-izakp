@@ -12,9 +12,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playersprite = selectedskin.GetComponent<SpriteRenderer>().sprite;
+        //playersprite = selectedskin.GetComponent<SpriteRenderer>().sprite;
 
-        Player.GetComponent<SpriteRenderer>().sprite = playersprite; 
+        //Player.GetComponent<SpriteRenderer>().sprite = playersprite; 
     }
 
 }

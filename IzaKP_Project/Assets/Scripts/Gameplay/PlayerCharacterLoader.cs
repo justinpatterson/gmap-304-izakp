@@ -11,7 +11,7 @@ public class PlayerCharacterLoader : MonoBehaviour
     {
         int currentSkin = PlayerPrefs.GetInt("SelectedSkin", 0);
         if (animatorSkins.Length > currentSkin) {
-            
+            myAnimator.runtimeAnimatorController = animatorSkins[currentSkin];
         }
     }
 }
