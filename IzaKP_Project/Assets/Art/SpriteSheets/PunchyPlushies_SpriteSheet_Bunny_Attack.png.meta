@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -7645903829512543335
     second: PunchyPlushies_SpriteSheet_Bunny_Attack_1
+  - first:
+      213: 1523066613259447921
+    second: PunchyPlushies_SpriteSheet_Bunny_Attack_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,7 +141,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1030
+        width: 1048
         height: 1024
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -157,9 +160,9 @@ TextureImporter:
       name: PunchyPlushies_SpriteSheet_Bunny_Attack_1
       rect:
         serializedVersion: 2
-        x: 1030
+        x: 1048
         y: 0
-        width: 1030
+        width: 1048
         height: 1024
       alignment: 4
       pivot: {x: 0, y: 0.5}
@@ -170,6 +173,27 @@ TextureImporter:
       bones: []
       spriteID: 9932b1f0afa44e590800000000000000
       internalID: -7645903829512543335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PunchyPlushies_SpriteSheet_Bunny_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 0
+        width: 1048
+        height: 1024
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e2694e305032510800000000000000
+      internalID: 1523066613259447921
       vertices: []
       indices: 
       edges: []
