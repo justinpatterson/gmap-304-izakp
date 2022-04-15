@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7fa60c2da30f0f24a9c6ed659c17f97e
+guid: 55e5534e77c53eb41aac1e668aacf923
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,49 +125,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Bunny_Block_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1020
-        height: 1024
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd36df0e202502f0800000000000000
-      internalID: -1007363559441154638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Bunny_Block_1
-      rect:
-        serializedVersion: 2
-        x: 1020
-        y: 0
-        width: 1020
-        height: 1024
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c68c8b6435f559dc0800000000000000
-      internalID: -3632892713130997652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
