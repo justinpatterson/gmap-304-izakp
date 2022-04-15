@@ -22,13 +22,21 @@ public class PlayerCombat : MonoBehaviour
     void Update()
     {
        //Player should attack with the A button on computer
-        if(Time.time >= nextattackTime)
-        {
+        //if(Time.time >= nextattackTime)-no longer needed
+        //connected to A button on touch screen
             if (Input.GetKeyDown(KeyCode.A))
             {
-                Attack();
-                nextattackTime = Time.time + 1f / attackRate;
+            OnAttackPressed();
             }
+    } 
+
+    public void OnAttackPressed() 
+    {
+
+        if (Time.time >= nextattackTime)
+        {
+            Attack();
+            nextattackTime = Time.time + 1f / attackRate;
         }
     }
 
