@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 773496245}
   - component: {fileID: 773496244}
   m_Layer: 0
-  m_Name: Enemy(Test)
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,6 +779,22 @@ PrefabInstance:
     - target: {fileID: 1791346929143287586, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364495045964423025, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1340113211}
+    - target: {fileID: 2364495045964423025, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnBlockPressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364495045964423025, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerCombat, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364495045964423025, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5764823486981205710, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
