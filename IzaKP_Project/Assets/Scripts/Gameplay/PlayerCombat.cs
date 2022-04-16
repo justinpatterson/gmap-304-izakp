@@ -18,6 +18,9 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     float nextattackTime = 0f;
 
+    public float blockRate = 2f;
+    float nextblockTime = 0f;
+
     // Update is called once per frame
     void Update()
     {
@@ -28,6 +31,12 @@ public class PlayerCombat : MonoBehaviour
             {
             OnAttackPressed();
             }
+
+        //Player should block with the B button on touch screen
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            OnBlockPressed();
+        }
     } 
 
     public void OnAttackPressed() 
@@ -63,5 +72,24 @@ public class PlayerCombat : MonoBehaviour
             return;
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+
+    public void OnBlockPressed()
+    {
+        if (Time.time >= nextblockTime)
+        {
+            Block();
+            nextblockTime = Time.time + 1f / blockRate;
+        }
+    }
+
+    void Block()
+    {
+        //Play block animation
+        animator.SetTrigger("Block");
+
+        //Detect enemies in range
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
     }
 }

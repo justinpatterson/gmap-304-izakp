@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
 
     private Rigidbody2D rb;
-    //private float moveSpeed;
     public Joystick joystick;
 
     public float runSpeed = 40f;
@@ -24,29 +23,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        /*if (Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-
-            switch (touch.phase)
-            {
-                case TouchPhase.Began:
-                    if (touch.position.x < Screen.width / 2)
-                        rb.velocity = new Vector2(- moveSpeed, 0f);
-
-                    if (touch.position.x > Screen.width / 2)
-                        rb.velocity = new Vector2(moveSpeed, 0f);
-                    break;
-
-                case TouchPhase.Ended:
-                    rb.velocity = new Vector2(0f, 0f);
-                    break;
-            }
-        }*/
-
         //Brackey's tutorial on joystick movement
         horizontalMove = joystick.Horizontal * runSpeed;
         rb.velocity = new Vector2(horizontalMove, 0);
-        //Debug.Log("Current Velocity is: " + rb.velocity + " and my speed is " + horizontalMove + " and the INPUT is " + joystick.GetInput());
     }
 }
