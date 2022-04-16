@@ -175,7 +175,7 @@ TextureImporter:
       name: PunchyPlushies_SpriteSheet_Frog_Block_1
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 1020
         y: 0
         width: 1020
         height: 1024
@@ -188,132 +188,6 @@ TextureImporter:
       bones: []
       spriteID: 41efa0e3e4dc9e160800000000000000
       internalID: 7055396027184643604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_2
-      rect:
-        serializedVersion: 2
-        x: 1577
-        y: 108
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b16a656b7ed6bfd0800000000000000
-      internalID: -2326427535926468170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_3
-      rect:
-        serializedVersion: 2
-        x: 1721
-        y: 116
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fd3672a32355bcc0800000000000000
-      internalID: -3695956506673005063
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_4
-      rect:
-        serializedVersion: 2
-        x: 1521
-        y: 92
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5870a1a91f0e1d80800000000000000
-      internalID: -8278162462300145573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_5
-      rect:
-        serializedVersion: 2
-        x: 1569
-        y: 92
-        width: 26
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca9fc406491c65490800000000000000
-      internalID: -7757800465084122708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_6
-      rect:
-        serializedVersion: 2
-        x: 1731
-        y: 95
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 657db815a56e44b80800000000000000
-      internalID: -8411344928431679658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PunchyPlushies_SpriteSheet_Frog_Block_7
-      rect:
-        serializedVersion: 2
-        x: 1529
-        y: 80
-        width: 6
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e60d845121dba120800000000000000
-      internalID: 2426262765351798499
       vertices: []
       indices: 
       edges: []
