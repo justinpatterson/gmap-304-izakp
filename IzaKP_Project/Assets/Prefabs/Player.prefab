@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 6381375177305598479}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,6 +86,8 @@ MonoBehaviour:
   attackRange: 0.5
   attackDamage: 20
   attackRate: 2
+  blockRate: 2
+  isAiControlled: 0
 --- !u!114 &5108654163840829868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +103,8 @@ MonoBehaviour:
   joystick: {fileID: 0}
   runSpeed: 12
   horizontalMove: 0
+  isAiControlled: 0
+  aiHorizontal: 0
 --- !u!50 &6532469203855926950
 Rigidbody2D:
   serializedVersion: 4
@@ -137,6 +141,7 @@ MonoBehaviour:
   maxHealth: 12
   currentHealth: 0
   healthBar: {fileID: 0}
+  isAiControlled: 0
 --- !u!114 &6381375177305598479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,8 +157,8 @@ MonoBehaviour:
   myAnimator: {fileID: 6532469203334245716}
   animatorSkins:
   - {fileID: 9100000, guid: de5779a6ec5f4d248b29a4d2c26950e9, type: 2}
-  - {fileID: 9100000, guid: c8300405be9984f41a6b6394c0bcb0d9, type: 2}
   - {fileID: 9100000, guid: b363f17026a2d3c4b9a88f518259b1d1, type: 2}
+  isAiControlled: 0
 --- !u!1 &6532469203334245719
 GameObject:
   m_ObjectHideFlags: 0

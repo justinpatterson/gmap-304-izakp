@@ -21,19 +21,21 @@ public class PlayerCombat : MonoBehaviour
     public float blockRate = 2f;
     float nextblockTime = 0f;
 
+    public bool isAiControlled;
+
     // Update is called once per frame
     void Update()
     {
        //Player should attack with the A button on computer
         //if(Time.time >= nextattackTime)-no longer needed
         //connected to A button on touch screen
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) && !isAiControlled)
             {
             OnAttackPressed();
             }
 
         //Player should block with the B button on touch screen
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) && !isAiControlled)
         {
             OnBlockPressed();
         }

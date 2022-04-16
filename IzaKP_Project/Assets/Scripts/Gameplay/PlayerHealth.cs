@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public bool isAiControlled;
+
     //Start is called before the first frame update
     private void Start()
     {
@@ -20,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         //Test to see if health bar moves at all
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !isAiControlled)
         {
             TakeDamage(3);
         }
