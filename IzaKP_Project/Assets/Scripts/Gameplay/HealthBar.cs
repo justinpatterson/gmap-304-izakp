@@ -10,6 +10,8 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+    public bool isAiControlled;
+
     //Starts at max health
     public void SetMaxHealth(int health)
     {
