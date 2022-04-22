@@ -940,8 +940,8 @@ MonoBehaviour:
     buttonPressAudio: {fileID: 0}
   musicInfo:
     defaultAudio: {fileID: 0}
-    mainMenuAudio: {fileID: 8300000, guid: 01d77b16139f08c4cb24b98ae9f43b15, type: 3}
-    gameplayAudio: {fileID: 8300000, guid: 644d36b0c1bdf2447b0c41ca5bc6dc0d, type: 3}
+    mainMenuAudio: {fileID: 8300000, guid: 644d36b0c1bdf2447b0c41ca5bc6dc0d, type: 3}
+    gameplayAudio: {fileID: 8300000, guid: 01d77b16139f08c4cb24b98ae9f43b15, type: 3}
 --- !u!4 &1992371262
 Transform:
   m_ObjectHideFlags: 0
