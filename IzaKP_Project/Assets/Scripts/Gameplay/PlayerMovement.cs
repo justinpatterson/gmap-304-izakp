@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isAiControlled;
     public float aiHorizontal = 0f;
 
+    public Animator animator;
+
    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,5 +31,7 @@ public class PlayerMovement : MonoBehaviour
         //Brackey's tutorial on joystick movement
         horizontalMove = isAiControlled ? aiHorizontal : joystick.Horizontal * runSpeed;
         rb.velocity = new Vector2(horizontalMove, 0);
+
+        animator.SetTrigger("Walk");
     }
 }
