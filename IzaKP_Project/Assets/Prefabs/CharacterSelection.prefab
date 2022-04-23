@@ -592,7 +592,6 @@ MonoBehaviour:
   skinImage: {fileID: 1128886732}
   skins:
   - {fileID: 21300000, guid: 45ab9a8e38085c04d83682b02c0a03e3, type: 3}
-  - {fileID: 21300000, guid: 46a474a1ebfd6d544bc4830bd8b99292, type: 3}
   - {fileID: 21300000, guid: 52008d275a1952845837f4adcb06a0e0, type: 3}
   playerskin: {fileID: 2320651189332388778, guid: 99b27ff07d7e74c33a26430af98b595b, type: 3}
 --- !u!1 &5945393751692305254

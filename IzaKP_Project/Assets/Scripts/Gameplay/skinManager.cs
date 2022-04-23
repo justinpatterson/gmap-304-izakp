@@ -21,6 +21,12 @@ public class skinManager : MonoBehaviour
     private void Awake()
     {
         selectedSkin = PlayerPrefs.GetInt("SelectedSkin", 0);
+        Debug.Log("Skin selected is " + selectedSkin);
+        if (selectedSkin >= skins.Count)
+        {
+            PlayerPrefs.SetInt("SelectedSkin", 0);
+            selectedSkin = 0;
+        }
 
         skinImage.sprite = skins[selectedSkin];
     }
@@ -54,6 +60,7 @@ public class skinManager : MonoBehaviour
     {
         //PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Prefabs/selectedSkin.prefab");
         PlayerPrefs.SetInt("SelectedSkin", selectedSkin);
+        Debug.Log("SELECTED SKIN IS ... " + selectedSkin);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

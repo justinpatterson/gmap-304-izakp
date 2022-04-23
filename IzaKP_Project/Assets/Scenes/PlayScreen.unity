@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &82184822 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5773792496763696973, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+  m_PrefabInstance: {fileID: 740449457371033769}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019ebe0e822434b4588fccadeabe347d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &239049658 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3655972689545472213, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
@@ -1241,6 +1252,7 @@ MonoBehaviour:
   horizontalMove: 0
   isAiControlled: 1
   aiHorizontal: 0
+  xMovementBoundaryRange: {x: -6.5, y: -6.5}
   animator: {fileID: 3863397319263772827}
 --- !u!212 &3863397319263772820
 SpriteRenderer:
@@ -1393,7 +1405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 12
   currentHealth: 0
-  healthBar: {fileID: 967003692}
+  healthBar: {fileID: 82184822}
   isAiControlled: 1
   animator: {fileID: 0}
 --- !u!114 &4014193447598090176
@@ -1503,9 +1515,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 84539484016920938, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4483247904780426783, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: m_RootOrder
@@ -1555,6 +1575,10 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 239049658}
+    - target: {fileID: 6532469203334245719, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: animator
       value: 
@@ -1581,10 +1605,10 @@ MonoBehaviour:
   attackPoint: {fileID: 2583261431472105916}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   attackRange: 1.68
   attackDamage: 2
-  attackRate: 2
+  attackRate: 1
   blockRate: 2
   isAiControlled: 1
 --- !u!1 &7932577768562328741

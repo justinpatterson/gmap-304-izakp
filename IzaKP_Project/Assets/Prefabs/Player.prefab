@@ -106,6 +106,7 @@ MonoBehaviour:
   horizontalMove: 0
   isAiControlled: 0
   aiHorizontal: 0
+  xMovementBoundaryRange: {x: -6.5, y: 6.5}
   animator: {fileID: 6532469203334245716}
 --- !u!50 &6532469203855926950
 Rigidbody2D:

@@ -55,16 +55,23 @@ public class PlayerCombat : MonoBehaviour
     {
         //Play an attack animation
         animator.SetTrigger("Attack");
-
+        Debug.Log("Attacking...");
         //Detect enemies in range
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        //Damage them
-        foreach(Collider2D enemy in hitEnemies)
-        {
-            Debug.Log("We hit " + enemy.name);
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-        }
+        
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            //Damage them
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                Debug.Log("We hit " + enemy.name);
+            /*
+            if (isAiControlled == false)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
+            */
+            enemy.GetComponent<PlayerHealth>()?.TakeDamage(2);
+            }
     }
 
     //Allows to draw in the editor when object is selected

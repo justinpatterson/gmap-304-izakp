@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isAiControlled;
     public float aiHorizontal = 0f;
 
+    public Vector2 xMovementBoundaryRange = new Vector2(-4, 4);
+
     public Animator animator;
 
    private void Start()
@@ -28,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        //camera boundaries
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, xMovementBoundaryRange.x, xMovementBoundaryRange.y), Mathf.Clamp(transform.position.y, -2f, 2f), transform.position.z);
+
         //Brackey's tutorial on joystick movement
         horizontalMove = isAiControlled ? aiHorizontal : joystick.Horizontal * runSpeed;
         rb.velocity = new Vector2(horizontalMove, 0);

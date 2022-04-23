@@ -18,6 +18,10 @@ public class PlayerCharacterLoader : MonoBehaviour
             {
                 currentSkin = 0;
             }
+            if (GetComponent<PlayerHealth>()) 
+            {
+                GetComponent<PlayerHealth>().healthBar.GetComponentInChildren<PlayerHealthBarLoader>().SetSkin(currentSkin);
+            }
         }
         if (animatorSkins.Length > currentSkin) {
             myAnimator.runtimeAnimatorController = animatorSkins[currentSkin];
