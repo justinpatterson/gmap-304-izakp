@@ -64,12 +64,7 @@ public class PlayerCombat : MonoBehaviour
             foreach (Collider2D enemy in hitEnemies)
             {
                 Debug.Log("We hit " + enemy.name);
-            /*
-            if (isAiControlled == false)
-            {
-                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-            }
-            */
+           
             enemy.GetComponent<PlayerHealth>()?.TakeDamage(2);
             }
     }

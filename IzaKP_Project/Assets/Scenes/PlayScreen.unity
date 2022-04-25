@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &19448343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+  m_PrefabInstance: {fileID: 6532469202240483251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &82184822 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5773792496763696973, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
@@ -484,7 +489,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 940850975104101632, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
   m_PrefabInstance: {fileID: 6532469202240483251}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 19448343}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39a3e26195272af4696143452c7ed143, type: 3}
@@ -662,11 +667,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &1527163904 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6532469203334245716, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-  m_PrefabInstance: {fileID: 6532469202240483251}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791784609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1059,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 138472671007222659, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885358434554532374, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1099,6 +1103,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1340113211}
+    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5764823486981205710, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1464,7 +1472,7 @@ MonoBehaviour:
   myHealth: {fileID: 3863397319785425771}
   myMovement: {fileID: 3017377257020638307}
   myCharacterLoader: {fileID: 4014193447598090176}
-  playerTarget: {fileID: 0}
+  playerTarget: {fileID: 19448343}
   aiMovementSpeed: 1
   attackDistance: 5
 --- !u!4 &5840543586867794896
@@ -1515,17 +1523,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 84539484016920938, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4483247904780426753, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4483247904780426783, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: m_RootOrder
@@ -1575,14 +1575,6 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 239049658}
-    - target: {fileID: 6532469203334245719, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1527163904}
     - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: healthBar
       value: 

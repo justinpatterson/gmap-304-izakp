@@ -13,6 +13,8 @@ public class AiPlayerController : MonoBehaviour
 
     public float aiMovementSpeed = 1f;
     public float attackDistance = 1f;
+
+
     private void Awake()
     {
         playerTarget = GameObject.FindGameObjectWithTag("Player");
