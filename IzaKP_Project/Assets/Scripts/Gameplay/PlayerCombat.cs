@@ -96,5 +96,8 @@ public class PlayerCombat : MonoBehaviour
 
         //Detect enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        //block enemy attacks from causing damage
+        
     }
 }

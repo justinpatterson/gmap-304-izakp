@@ -39,17 +39,23 @@ public class PlayerHealth : MonoBehaviour
 
         //play hurt animation
         animator.SetTrigger("Hurt");
+
+        //if statement for when health reaches zero triggers Die()
+        if (currentHealth == 0)
+        {
+            Die();
+        }
     }
 
     void Die()
     {
-        Debug.Log("Enemy died!");
-
         //Die animation
         animator.SetTrigger("Lose");
 
         //Disable the enemy
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        //show lose or win screen
     }
 }
