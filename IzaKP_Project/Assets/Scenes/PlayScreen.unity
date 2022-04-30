@@ -1059,6 +1059,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 138472671007222659, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885358434554532374, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1099,6 +1103,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1340113211}
+    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241407112705279999, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649709410460628142, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439860131669026558, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5764823486981205710, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1252,7 +1272,7 @@ MonoBehaviour:
   horizontalMove: 0
   isAiControlled: 1
   aiHorizontal: 0
-  xMovementBoundaryRange: {x: -6.5, y: -6.5}
+  xMovementBoundaryRange: {x: -6.5, y: 6.5}
   animator: {fileID: 3863397319263772827}
 --- !u!212 &3863397319263772820
 SpriteRenderer:
@@ -1407,7 +1427,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 82184822}
   isAiControlled: 1
-  animator: {fileID: 0}
+  animator: {fileID: 3863397319263772827}
 --- !u!114 &4014193447598090176
 MonoBehaviour:
   m_ObjectHideFlags: 0

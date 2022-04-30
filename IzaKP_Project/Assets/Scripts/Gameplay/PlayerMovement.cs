@@ -31,10 +31,12 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //camera boundaries
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, xMovementBoundaryRange.x, xMovementBoundaryRange.y), Mathf.Clamp(transform.position.y, -2f, 2f), transform.position.z);
+        Vector3 clampPosition = transform.position;
+        clampPosition.x = Mathf.Clamp(clampPosition.x, xMovementBoundaryRange.x, xMovementBoundaryRange.y);
+        transform.position = clampPosition;
 
         //Brackey's tutorial on joystick movement
-        horizontalMove = isAiControlled ? aiHorizontal : joystick.Horizontal * runSpeed;
+        horizontalMove = isAiControlled ? (aiHorizontal) : joystick.Horizontal * runSpeed;
         rb.velocity = new Vector2(horizontalMove, 0);
 
         animator.SetTrigger("Walk");
