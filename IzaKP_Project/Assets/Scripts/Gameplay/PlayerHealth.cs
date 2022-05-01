@@ -13,6 +13,9 @@ public class PlayerHealth : MonoBehaviour
 
     public Animator animator;
 
+    public GameObject gameOverMenuUI;
+
+
     //Start is called before the first frame update
     private void Start()
     {
@@ -44,6 +47,10 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth == 0)
         {
             Die();
+            //show lose or win screen
+            //game over
+            FindObjectOfType<GameManager>().EndGame();
+            gameOverMenuUI.SetActive(true);
         }
     }
 
@@ -55,8 +62,5 @@ public class PlayerHealth : MonoBehaviour
         //Disable the enemy
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
-        //show lose or win screen
-        //game over
     }
 }

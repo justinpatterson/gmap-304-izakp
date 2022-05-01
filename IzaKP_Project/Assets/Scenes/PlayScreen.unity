@@ -969,6 +969,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2083217121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5189507367665870708, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+  m_PrefabInstance: {fileID: 740449457371033769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2095502712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,10 +1064,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 138472671007222659, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 885358434554532374, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1103,22 +1104,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1340113211}
-    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3241407112705279999, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3649709410460628142, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439860131669026558, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 5723467805763724991, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1343156521}
     - target: {fileID: 5764823486981205710, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1227,6 +1216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7502814059831182792, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1343156521}
     - target: {fileID: 7803758785315952543, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1428,6 +1421,7 @@ MonoBehaviour:
   healthBar: {fileID: 82184822}
   isAiControlled: 1
   animator: {fileID: 3863397319263772827}
+  gameOverMenuUI: {fileID: 0}
 --- !u!114 &4014193447598090176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1585,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 967003692}
+    - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: gameOverMenuUI
+      value: 
+      objectReference: {fileID: 2083217121}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
 --- !u!114 &7076535725649010895
