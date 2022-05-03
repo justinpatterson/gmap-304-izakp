@@ -87,6 +87,7 @@ MonoBehaviour:
   attackRange: 1.68
   attackDamage: 2
   attackRate: 2
+  blockRange: 0.5
   blockRate: 2
   isAiControlled: 0
 --- !u!114 &5108654163840829868
@@ -147,6 +148,7 @@ MonoBehaviour:
   isAiControlled: 0
   animator: {fileID: 6532469203334245716}
   gameOverMenuUI: {fileID: 0}
+  winMenuUI: {fileID: 0}
 --- !u!114 &6381375177305598479
 MonoBehaviour:
   m_ObjectHideFlags: 0

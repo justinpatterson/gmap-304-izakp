@@ -1234,6 +1234,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+--- !u!1 &740449457371033770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2948533305810477875, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+  m_PrefabInstance: {fileID: 740449457371033769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2583261431472105916
 Transform:
   m_ObjectHideFlags: 0
@@ -1422,6 +1427,7 @@ MonoBehaviour:
   isAiControlled: 1
   animator: {fileID: 3863397319263772827}
   gameOverMenuUI: {fileID: 0}
+  winMenuUI: {fileID: 0}
 --- !u!114 &4014193447598090176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,6 +1592,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 967003692}
     - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
+      propertyPath: winMenuUI
+      value: 
+      objectReference: {fileID: 740449457371033770}
+    - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
       propertyPath: gameOverMenuUI
       value: 
       objectReference: {fileID: 2083217121}
@@ -1611,6 +1621,7 @@ MonoBehaviour:
   attackRange: 1.68
   attackDamage: 2
   attackRate: 1
+  blockRange: 0.5
   blockRate: 2
   isAiControlled: 1
 --- !u!1 &7932577768562328741

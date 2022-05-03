@@ -11,6 +11,7 @@ public class PlayerCombat : MonoBehaviour
     //reference Attack Point
     public Transform attackPoint;
     public LayerMask enemyLayers;
+    //public LayerMask playerLayer;
 
     public float attackRange = 0.5f;
     public int attackDamage = 3;
@@ -18,6 +19,7 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     float nextattackTime = 0f;
 
+    public float blockRange = 0.5f;
     public float blockRate = 2f;
     float nextblockTime = 0f;
 
@@ -56,11 +58,11 @@ public class PlayerCombat : MonoBehaviour
         //Play an attack animation
         animator.SetTrigger("Attack");
         Debug.Log("Attacking...");
+       
         //Detect enemies in range
-
-        
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-            //Damage them
+            
+        //Damage them
             foreach (Collider2D enemy in hitEnemies)
             {
                 Debug.Log("We hit " + enemy.name);
@@ -94,10 +96,16 @@ public class PlayerCombat : MonoBehaviour
         //Play block animation
         animator.SetTrigger("Block");
 
+        Debug.Log("Blocked!");
+
+
         //Detect enemies in range
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //Collider2D[] shieldPlayer = Physics2D.OverlapCircleAll(attackPoint.position, blockRange, playerLayer);
 
         //block enemy attacks from causing damage
-       
+        //foreach (Collider2D player in shieldPlayer)
+        //{
+        // player.GetComponent<PlayerHealth>().TakeDamage(0);
+        //}
     }
 }

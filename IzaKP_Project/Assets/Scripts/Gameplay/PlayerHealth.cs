@@ -15,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject gameOverMenuUI;
 
+    public GameObject winMenuUI;
+
 
     //Start is called before the first frame update
     private void Start()
@@ -54,10 +56,27 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //if statement for when one character's health reaches 0 before the other
+    //public void Victory()
+    //{
+        //Win();
+        //winMenuUI.SetActive(true);
+    //}
+
     void Die()
     {
         //Die animation
         animator.SetTrigger("Lose");
+
+        //Disable the enemy
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+    }
+
+    void Win()
+    {
+        //win animation
+        animator.SetTrigger("Win");
 
         //Disable the enemy
         GetComponent<Collider2D>().enabled = false;
