@@ -90,6 +90,7 @@ MonoBehaviour:
   blockRange: 0.5
   blockRate: 2
   isAiControlled: 0
+  hitBox: {fileID: 84539484016920938}
 --- !u!114 &5108654163840829868
 MonoBehaviour:
   m_ObjectHideFlags: 0

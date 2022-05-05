@@ -24,6 +24,8 @@ public class PlayerCombat : MonoBehaviour
     float nextblockTime = 0f;
 
     public bool isAiControlled;
+    public bool isBlocking;
+   
 
     // Update is called once per frame
     void Update()
@@ -97,7 +99,8 @@ public class PlayerCombat : MonoBehaviour
         animator.SetTrigger("Block");
 
         Debug.Log("Blocked!");
-
+        isBlocking = true;
+        StartCoroutine(BlockRoutine());
 
         //Detect enemies in range
         //Collider2D[] shieldPlayer = Physics2D.OverlapCircleAll(attackPoint.position, blockRange, playerLayer);
@@ -107,5 +110,14 @@ public class PlayerCombat : MonoBehaviour
         //{
         // player.GetComponent<PlayerHealth>().TakeDamage(0);
         //}
+
     }
+
+    IEnumerator BlockRoutine()
+    {
+        yield return null;
+        yield return new WaitForSeconds(1f);
+        isBlocking = false;
+    }
+  
 }

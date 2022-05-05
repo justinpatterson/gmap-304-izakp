@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject gameOverMenuUI;
 
     public GameObject winMenuUI;
-
+    public PlayerCombat myPlayerCombat;
 
     //Start is called before the first frame update
     private void Start()
@@ -38,6 +38,9 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (myPlayerCombat.isBlocking)
+            return;
+
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
