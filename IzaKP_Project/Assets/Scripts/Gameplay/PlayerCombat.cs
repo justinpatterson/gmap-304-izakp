@@ -11,7 +11,6 @@ public class PlayerCombat : MonoBehaviour
     //reference Attack Point
     public Transform attackPoint;
     public LayerMask enemyLayers;
-    //public LayerMask playerLayer;
 
     public float attackRange = 0.5f;
     public int attackDamage = 3;
@@ -101,15 +100,6 @@ public class PlayerCombat : MonoBehaviour
         Debug.Log("Blocked!");
         isBlocking = true;
         StartCoroutine(BlockRoutine());
-
-        //Detect enemies in range
-        //Collider2D[] shieldPlayer = Physics2D.OverlapCircleAll(attackPoint.position, blockRange, playerLayer);
-
-        //block enemy attacks from causing damage
-        //foreach (Collider2D player in shieldPlayer)
-        //{
-        // player.GetComponent<PlayerHealth>().TakeDamage(0);
-        //}
 
     }
 
