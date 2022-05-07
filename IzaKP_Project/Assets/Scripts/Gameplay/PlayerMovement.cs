@@ -39,6 +39,6 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = isAiControlled ? (aiHorizontal) : joystick.Horizontal * runSpeed;
         rb.velocity = new Vector2(horizontalMove, 0);
 
-        animator.SetTrigger("Walk");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
     }
 }

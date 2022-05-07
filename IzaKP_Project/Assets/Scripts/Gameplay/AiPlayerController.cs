@@ -21,6 +21,11 @@ public class AiPlayerController : MonoBehaviour
     }
     private void Update()
     {
+        if(myHealth.currentHealth <= 0)
+        {
+            return;
+        }
+
         if (IsInAttackRangeOfPlayer())
         {
             //attack
