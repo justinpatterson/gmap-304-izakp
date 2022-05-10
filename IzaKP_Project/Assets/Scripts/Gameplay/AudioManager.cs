@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
 
@@ -124,4 +125,13 @@ public class AudioManager : MonoBehaviour
         return null;
     }
 
+    public void SetSFXMixerLevel(float value)
+    {
+        audioMixer.SetFloat("SFXVolumeParam", value);
+    }
+
+    public void SetMusicMixerLevel(float value)
+    {
+        audioMixer.SetFloat("MusicVolumeParam", value);
+    }
 }

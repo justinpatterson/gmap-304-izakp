@@ -1064,6 +1064,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 138472671007222659, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 138472671007222659, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 885358434554532374, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1104,6 +1112,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1340113211}
+    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2514369782532160402, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2742481288644536662, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1343156521}
+    - target: {fileID: 3394329463713254161, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1343156521}
+    - target: {fileID: 3531703589727299025, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1343156521}
     - target: {fileID: 5723467805763724991, guid: 8fdf3c03303a70d4f893b89cdf3d0efb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1600,10 +1632,6 @@ PrefabInstance:
       propertyPath: gameOverMenuUI
       value: 
       objectReference: {fileID: 2083217121}
-    - target: {fileID: 6532469203855926948, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
-      propertyPath: myPlayerCombat
-      value: 
-      objectReference: {fileID: 1340113211}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a2f24368d2c3f24d831324af4f59681, type: 3}
 --- !u!114 &7076535725649010895
